@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-service-ver2"
+version = "0.2.0"
+description = "IRIS ver2 Service：核（三面：SDK 面 / Foundation 面 / inner-face）"
+requires-python = ">=3.10"
+dependencies = ["pyzmq", "msgpack", "msgpack-numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+iris-service = "iris_service.main:main"

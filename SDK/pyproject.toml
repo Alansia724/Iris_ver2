@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-sdk-ver2"
+version = "0.2.0"
+description = "IRIS ver2 SDK：接口（AI 协作客户端；GUI 面板之后再说）"
+requires-python = ">=3.10"
+dependencies = ["pyzmq", "msgpack", "msgpack-numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

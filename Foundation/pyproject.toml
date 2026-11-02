@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-foundation-ver2"
+version = "0.2.0"
+description = "IRIS ver2 Foundation：触手（device_list + 仪器驱动）"
+requires-python = ">=3.10"
+dependencies = ["pyzmq", "msgpack", "msgpack-numpy", "numpy", "h5py",
+                "pyserial>=3.5", "pyusb"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
